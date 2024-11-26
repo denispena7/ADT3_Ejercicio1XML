@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="es.studium.hibernate.Perro" table="dogs">
+		<id name="id" type="integer" column="idPerro">
+			<generator class="native" />
+		</id>
+		<property name="raza" column="razaPerro" type="string" />
+		<property name="tamano" column="tamanoPerro" type="string" />
+		<property name="edad" column="edadPerro" type="integer" />
+		<property name="color" column="colorPerro" type="string" />
+	</class>
+</hibernate-mapping>
